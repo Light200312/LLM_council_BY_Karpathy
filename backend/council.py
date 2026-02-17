@@ -274,8 +274,8 @@ Title:"""
 
     messages = [{"role": "user", "content": title_prompt}]
 
-    # Use gemini-2.5-flash for title generation (fast and cheap)
-    response = await query_model("google/gemini-2.5-flash", messages, timeout=30.0)
+    # Use Mistral for title generation (proven to work)
+    response = await query_model("mistralai/mistral-7b-instruct", messages, timeout=30.0)
 
     if response is None:
         # Fallback to a generic title
