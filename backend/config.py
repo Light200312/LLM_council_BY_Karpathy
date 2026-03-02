@@ -21,6 +21,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 # IMPORTANT: Only using models that are confirmed to work on OpenRouter free tier
 COUNCIL_MODELS = [
     'meta-llama/llama-3.3-70b-instruct',
+    "deepseek/deepseek-chat:free","qwen/qwen-2-7b-instruct:free",
     'mistralai/devstral-2512:free',
     "google/gemini-2.0-flash-001",
     "mistralai/mistral-7b-instruct",
